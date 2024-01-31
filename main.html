@@ -4,52 +4,53 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<title>Signup Form Car</title>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="Text" id="name" name="name" placeholder="Name" required>
-
-        <label for="email">Email:</label>
-        <input type="Email" id="email" name="email" placeholder="Email" required>
-
-        <label>Gender:</label>
-        <input type="Radio" id="gender_m" name="gender" required>
-        <label for="gender_m">Male</label>
-        <input type="Radio" id="gender_f" name="gender" required>
-        <label for="gender_f">Female</label>
-
-        <label for="cars">Car Brands:</label>
-        <select id="cars" name="cars" required>
-            <option value="" disabled>--Please choose an option--</option>
-            <option value="bmw">BMW</option>
-            <option value="audi">Audi</option>
-            <option value="mercedes">Mercedes</option>
-        </select>
-
-        <label for="age">Age:</label>
-        <input type="Number" id="age" name="age" placeholder="Age" required>
-
-        <label for="dob">DOB:</label>
-        <input type="Date" id="dob" name="dob" required>
-
-        <label for="tel">Phone Number:</label>
-        <input type="Tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx">
-
-		<label for="password">Password</label>
-        <input type="Password" id="password" placeholder="Password" required>
-		
-        <label for="tos"><input type="checkbox"heckbox" id="tos" name="tos" required>
-    I agree to the TOS</label>
-
-
-        <button type="submit">Sign Up</button>
-    </form>
-    <script type="text/javascript" src="./script.js">
+	<form method="post">
+		<label for="name">Name</label>
+	<input id="name" placeholder="Name" type="text" required>
+	<br>
+	<label for="email">Email</label>
+	<input id="email" type="email" placeholder="Email" required>
+	<br>
+	<input name="gender" id="gender_m" type="radio" required>
+	<label for="gender_m">Male</label>
+	<input name="gender" id="gender_f" type="radio" required>
+	<label for="gender_f">Female</label>
+	<br>
+	<label for="cars">Car Brands</label>
+	<select id="cars" aria-required>
+		<option>Lamborghini</option>
+		<option>Swift</option>
+		<option>Nano</option>
+		<option>Audi</option>
+		<option>Mercedez</option>
+	</select>
+	<br>
+	<label for="age">Age</label>
+	<input id="age" type="number" placeholder="Age" required>
+	<br>
+	<label for="dob">DOB</label>
+	<input id="dob" type="date" required>
+	<br>
+	<label for="tel">Phone Number</label>
+	<input id="tel" type="tel" placeholder="xxx-xxx-xxxx">
+	<br>
+	<label for="password">Password</label>
+	<input id="password" placeholder="Password" type="password" required>
+	<br>
+	<label for="tos">I agree to the TOS</label>
+	<input id="tos" type="checkbox" required>
+    <button type="submit">Submit</button>
+	</form>
+	<script type="text/javascript" src="./script.js">
 </script>
 
 </body>
+
+</html>
 
 </html>
